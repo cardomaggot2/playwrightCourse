@@ -1,0 +1,54 @@
+
+https://playwright.dev/docs/test-cli
+
+//Run
+npx playwright test
+
+//Run Headed
+npx playwright test --headed
+
+//Run with UI
+npx playwright test --ui
+
+// Run with Debug
+npx playwright test --debug
+
+//Run specific project -> if there are some projects configurated and you execute the test without specify the project, the test will run all the projects, unless you are in UI mode
+npx playwright test --project=demo --ui
+npx playwright test E2ETestOptimized.spec.ts --project webkit
+
+//Run project displaying the steps visually
+npx playwright test E2ETestOptimized.spec.ts --headed
+
+//Run project with a specific tag
+npx playwright test --ui --grep @E2E
+
+//Adds project command to Package.json within the scripts {} tag
+npm run TDP 
+
+//Abrir el reporte
+1. npx playwright show-report
+2. copiando el path del index.html de la carpeta playwright-report
+
+// Abrir el trace de algun test
+https://trace.playwright.dev/ -> subir el .zip acá
+
+
+// ALLURE REPORTS
+https://allurereport.org/docs/playwright/ 
+allure serve allure-results
+
+// JENKINS
+- Start the Jenkins service: brew services start jenkins
+- Restart the Jenkins service: brew services restart jenkins
+- Update the Jenkins version: brew upgrade jenkins
+
+http://localhost:9090/
+ricardo_vargas
+Bananito03
+ricardo.vargas@criticalmass.com
+
+// GIT
+
+
+

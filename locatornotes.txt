@@ -1,0 +1,30 @@
+
+//Search by Id
+#id -> #username
+
+//Search by Class
+.class -> .form-control
+Tagname.class ->  div.form-control
+
+//Search by attribute
+[attr = 'value']
+[style *='none'] --una busqueda parcial 
+
+//Search by parent-child
+
+div.form-group > input#username
+
+// Search by xpath
+//*[contains(text(), 'Register here')]
+//a[contains(text(), 'Register')]
+
+//Search by text
+locator('text=" Add To Cart"')
+
+// Search by tagname and text
+page.locator('article:has-text("Playwright")').click();
+
+//Solo visible elements
+page.locator('button:visible')
+li a[href*="lifetime"]:visible
+
