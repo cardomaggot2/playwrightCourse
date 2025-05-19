@@ -1,0 +1,4 @@
+Running E2E Test for Client Application APP
+Checking - iphone X
+Login Page
+Dashboard Page

@@ -1,0 +1,26 @@
+[
+    {
+        "authcred": {
+            "username": "rahulshettyacademy",
+            "password": "learning",
+            "productName": "iphone X"
+        },
+        "country": "Costa Rica"
+    },
+    {
+        "authcred": {
+            "username": "rahulshettyacademy",
+            "password": "learning",
+            "productName": "Samsung Note 8"
+        },
+        "country": "Uruguay"
+    },
+    {
+        "authcred": {
+            "username": "rahulshettyacademy",
+            "password": "learning",
+            "productName": "Nokia Edge"
+        },
+        "country": "France"
+    }
+]

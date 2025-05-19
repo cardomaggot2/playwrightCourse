@@ -1,0 +1,19 @@
+Running E2E Test for Client Application APP
+Checking - iphone X
+Login Page
+Dashboard Page
+Product Details Page
+Purchase Page
+iphone X -> Purchased successfully
+Checking - Samsung Note 8
+Login Page
+Dashboard Page
+Product Details Page
+Purchase Page
+Samsung Note 8 -> Purchased successfully
+Checking - Nokia Edge
+Login Page
+Dashboard Page
+Product Details Page
+Purchase Page
+Nokia Edge -> Purchased successfully

@@ -1,0 +1,81 @@
+Error in RequestABrochureFixture requestABrochureFormFieldsValidation locator.click: Test timeout of 20000ms exceeded.
+Call log:
+  - waiting for locator('//a[contains(text(), "Checkout")]')
+    - locator resolved to <a class="nav-link btn btn-primary">…</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+    at DashboardPage.goToCheckout (/Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/pageObjects/ClientAppPO/DashboardPage.js:11:32)
+    at ClientAppPOFixture.PurchasingProduct (/Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/fixtures/ClientAppPOFixture.ts:41:29)
+    at /Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/tests/ClientAppPO.spec.ts:15:20 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@16',
+    location: {
+      file: '/Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/pageObjects/ClientAppPO/DashboardPage.js',
+      line: 11,
+      column: 32,
+      function: 'DashboardPage.goToCheckout'
+    },
+    category: 'pw:api',
+    title: 'locator.click(//a[contains(text(), "Checkout")])',
+    apiName: 'locator.click',
+    params: { selector: '//a[contains(text(), "Checkout")]', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    complete: [Function: complete],
+    endWallTime: 1741038808970,
+    error: {
+      message: 'Error: locator.click: Test timeout of 20000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//a[contains(text(), "Checkout")]')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <a class="nav-link btn btn-primary">…</a>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    15 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is not visible\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'Error: locator.click: Test timeout of 20000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('//a[contains(text(), "Checkout")]')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <a class="nav-link btn btn-primary">…</a>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    15 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is not visible\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at DashboardPage.goToCheckout (/Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/pageObjects/ClientAppPO/DashboardPage.js:11:32)\n' +
+        '    at ClientAppPOFixture.PurchasingProduct (/Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/fixtures/ClientAppPOFixture.ts:41:29)\n' +
+        '    at /Users/ricardo.vargas/Documents/PlaywrightCourse/Practice 1/tests/ClientAppPO.spec.ts:15:20',
+      cause: undefined
+    }
+  }
+}
