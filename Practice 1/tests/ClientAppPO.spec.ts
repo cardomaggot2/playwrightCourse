@@ -1,20 +1,20 @@
-import { test, expect, mergeTests } from '@playwright/test';
-import { CAtest as ClientAppPOFixture } from '../fixtures/ClientAppPOFixture'
+import { expect } from "@playwright/test";
+import { test as CATest } from "../fixtures/ClientAppPOFixture";
 
+//const ClientAppPOTest = mergeTests(ClientAppPOFixture);
 
-const ClientAppPOTest = mergeTests(ClientAppPOFixture);
-
-
-test.beforeEach('Open start URL and setting login locators', async () => {
-    console.log(`Running ${test.info().title}`);
-
+CATest.beforeEach("Open start URL and setting login locators", async () => {
+  console.log(`Running ${CATest.info().title}`);
 });
 
-ClientAppPOTest('E2E Test for Client Application APP', { tag: '@E2E' }, async ({ ClientAppPOFixture }) => {
+CATest.describe("My test Scenarios", () => {
+  CATest(
+    "E2E Test for Client Application APP",
+    { tag: "@E2E" },
+    async ({ clientAppPOFixture }) => {
+      const result = await clientAppPOFixture.PurchasingProduct();
 
-    const result = await ClientAppPOFixture.PurchasingProduct();
-
-    expect(result).toBeTruthy();
-
-})
-
+      expect(result).toBeTruthy();
+    }
+  );
+});

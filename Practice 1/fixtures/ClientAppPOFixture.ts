@@ -1,4 +1,4 @@
-import { test, Page } from "@playwright/test";
+import { test as baseTest, Page } from "@playwright/test";
 import { POManager } from "../pageObjects/ClientAppPO/POManager";
 import jsondata from "../utils/testData/ClientAppTestData.json";
 
@@ -65,9 +65,19 @@ class ClientAppPOFixture {
     }
   }
 }
-export const CAtest = test.extend({
-  ClientAppPOFixture : async ({ page }, use) => {
-    const clientAppPOFixture = new ClientAppPOFixture(page);
-    await use(clientAppPOFixture);
-  },
+// export const CAtest = test.extend({
+//   ClientAppPOFixture : async ({ page }, use) => {
+//     const clientAppPOFixture = new ClientAppPOFixture(page);
+//     await use(clientAppPOFixture);
+//   },
+// });
+
+type MyFixtures = {
+  clientAppPOFixture: ClientAppPOFixture
+}
+export const test = baseTest.extend<MyFixtures>({
+clientAppPOFixture: async ({ page }, use) => {
+  const clientAppPOFixture = new ClientAppPOFixture(page);
+  await use(clientAppPOFixture);
+},
 });
